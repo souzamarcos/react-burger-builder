@@ -5,14 +5,14 @@ import classes from './BurgerIngredient.css';
 
 class BurgerIngredient extends React.Component {
   render(){
-    let igredient = null;
+    let ingredient = null;
 
     switch(this.props.type){
       case 'bread-bottom':
-        igredient = (<div className={classes.BreadBottom}></div>);
+        ingredient = (<div className={classes.BreadBottom}></div>);
         break;
       case 'bread-top':
-        igredient = (
+        ingredient = (
           <div className={classes.BreadTop}>
             <div className={classes.Seeds1}></div>
             <div className={classes.Seeds2}></div>
@@ -20,27 +20,23 @@ class BurgerIngredient extends React.Component {
         );
         break;
       case 'meat':
-        igredient = (<div className={classes.Meat}></div>);
+        ingredient = (<div className={classes.Meat}></div>);
         break;
       case 'cheese':
-        igredient = (<div className={classes.Cheese}></div>);
+        ingredient = (<div className={classes.Cheese}></div>);
         break;
       case 'bacon':
-        igredient = (<div className={classes.Bacon}></div>);
+        ingredient = (<div className={classes.Bacon}></div>);
         break;
       case 'salad':
-        igredient = (<div className={classes.Bacon}></div>);
+        ingredient = (<div className={classes.Salad}></div>);
         break;
       default:
-        igredient = null;
+        ingredient = null;
         break;
     }
 
-    return (
-      <div>
-        
-      </div>
-    );
+    return ingredient;
   }
 }
 
