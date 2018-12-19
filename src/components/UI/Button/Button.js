@@ -13,7 +13,7 @@ const Button = (props) => {
     );
 };
 
-Button.prototype = {
+Button.propTypes = {
     btnType: PropTypes.string.isRequired
 }
 
